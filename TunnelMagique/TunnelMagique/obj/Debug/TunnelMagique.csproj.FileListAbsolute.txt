@@ -18,3 +18,13 @@ C:\Users\kilgood\Desktop\TunnelMagique\TunnelMagique\obj\Debug\TunnelMagique.csp
 C:\Users\kilgood\Desktop\TunnelMagique\TunnelMagique\obj\Debug\TunnelMagique.csproj.CoreCompileInputs.cache
 C:\Users\kilgood\Desktop\TunnelMagique\TunnelMagique\obj\Debug\TunnelMagique.exe
 C:\Users\kilgood\Desktop\TunnelMagique\TunnelMagique\obj\Debug\TunnelMagique.pdb
+C:\Users\kilgood\Desktop\404-WindowsForms\TunnelMagique\TunnelMagique\bin\Debug\TunnelMagique.exe.config
+C:\Users\kilgood\Desktop\404-WindowsForms\TunnelMagique\TunnelMagique\bin\Debug\TunnelMagique.exe
+C:\Users\kilgood\Desktop\404-WindowsForms\TunnelMagique\TunnelMagique\bin\Debug\TunnelMagique.pdb
+C:\Users\kilgood\Desktop\404-WindowsForms\TunnelMagique\TunnelMagique\obj\Debug\TunnelMagique.TunnelMagique.resources
+C:\Users\kilgood\Desktop\404-WindowsForms\TunnelMagique\TunnelMagique\obj\Debug\TunnelMagique.Properties.Resources.resources
+C:\Users\kilgood\Desktop\404-WindowsForms\TunnelMagique\TunnelMagique\obj\Debug\TunnelMagique.csproj.GenerateResource.cache
+C:\Users\kilgood\Desktop\404-WindowsForms\TunnelMagique\TunnelMagique\obj\Debug\TunnelMagique.csproj.CoreCompileInputs.cache
+C:\Users\kilgood\Desktop\404-WindowsForms\TunnelMagique\TunnelMagique\obj\Debug\TunnelMagique.exe
+C:\Users\kilgood\Desktop\404-WindowsForms\TunnelMagique\TunnelMagique\obj\Debug\TunnelMagique.pdb
+C:\Users\kilgood\Desktop\404-WindowsForms\TunnelMagique\TunnelMagique\obj\Debug\TunnelMagique.csproj.AssemblyReference.cache

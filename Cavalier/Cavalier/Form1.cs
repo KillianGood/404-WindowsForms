@@ -20,8 +20,11 @@ namespace Cavalier
 
 
         int g_intCompteur = 0;
-        private bool _isClicked = true;
         Control currentButton;
+        private bool _isClicked = true;
+
+        private Point position = new Point(100, 100);
+
         private const int BUTTON_WIDTH = 8;
         private const int BUTTON_HEIGHT = 8;
         /// <summary>
@@ -58,6 +61,11 @@ namespace Cavalier
 
                     btn.MouseClick += new MouseEventHandler(ClickOnButton);
 
+                    //if (btn.Location.X == 0 || btn.Location.X == 50 )
+                    //{
+                    //    btn.BackColor = Color.Red;
+                    //}
+
                     pnlMap.Controls.Add(btn);
                 }
             }
@@ -77,15 +85,20 @@ namespace Cavalier
             }
         }
 
-        private void ClickOnButton (object sender, EventArgs e)
+        private void ClickOnButton (object sender, MouseEventArgs e)
         {
             Button btn = (Button)sender;
 
+            currentButton = pnlMap.GetChildAtPoint(position);
             if (_isClicked)
             {
                 btn.BackColor = Color.Red;
                 lblTry.Text = Convert.ToString(g_intCompteur++);
             }
+                button1.Location.X = 50;
+                currentButton = pnlMap.GetChildAtPoint(position);
+                currentButton.BackColor = Color.Green;  
+            
         }
 
         private void LblClick_Click(object sender, EventArgs e)
@@ -106,6 +119,21 @@ namespace Cavalier
         private void CréateurToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Killian Good");
+        }
+
+        private void pnlMap_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, MouseEventArgs e)
+        {
+            
+        }
+
+        private void FormMouseCR_MouseClick(object sender, MouseEventArgs e)
+        {
+
         }
     }
 }
