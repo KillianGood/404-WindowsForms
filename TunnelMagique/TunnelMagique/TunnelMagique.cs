@@ -84,6 +84,7 @@ namespace TunnelMagique
         /// <param name="e">event-related data</param>
         private void BtnUp_Click(object sender, EventArgs e)
         {
+            //  method for coordinates
             currentLabel = PnlContainer.GetChildAtPoint(position);
             if (currentLabel.Location.Y > 0)
             {
@@ -116,6 +117,7 @@ namespace TunnelMagique
         /// <param name="e">event-related data</param>
         private void BtnRight_Click(object sender, EventArgs e)
         {
+            //  method for coordinates
             currentLabel = PnlContainer.GetChildAtPoint(position);
             if (currentLabel.Location.X < 200)
             {
@@ -148,6 +150,7 @@ namespace TunnelMagique
         /// <param name="e">event-related data</param>
         private void BtnDown_Click(object sender, EventArgs e)
         {
+            //  method for coordinates
             currentLabel = PnlContainer.GetChildAtPoint(position);
             if (currentLabel.Location.Y < 200)
             {
@@ -180,7 +183,7 @@ namespace TunnelMagique
         /// <param name="e">event-related data</param>
         private void BtnLeft_Click(object sender, EventArgs e)
         {
-
+            //  method for coordinates
             currentLabel = PnlContainer.GetChildAtPoint(position);
             if (currentLabel.Location.X > 0)
             {
@@ -197,6 +200,7 @@ namespace TunnelMagique
                 currentLabel.BackColor = Color.Yellow; ;
             }
 
+            // yellow point cant moove pass the red corner
             if ((String)currentLabel.Tag == "Red")
             {
                 currentLabel.BackColor = Color.Red;
@@ -218,7 +222,7 @@ namespace TunnelMagique
         /// <param name="e">event-related data</param>
         private void SpawnButton_Click(object sender, EventArgs e)
         {
-            
+            //  method for coordinates
             currentLabel = PnlContainer.GetChildAtPoint(position);
 
             currentLabel.BackColor = Color.White;
