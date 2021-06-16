@@ -8,3 +8,13 @@ F:\ETML\2020-2021\04-modules-ict\404-ProgrammationOrienteeObjets\TunnelMagique\T
 F:\ETML\2020-2021\04-modules-ict\404-ProgrammationOrienteeObjets\TunnelMagique\TunnelMagique\obj\Debug\TunnelMagique.exe
 F:\ETML\2020-2021\04-modules-ict\404-ProgrammationOrienteeObjets\TunnelMagique\TunnelMagique\obj\Debug\TunnelMagique.pdb
 F:\ETML\2020-2021\04-modules-ict\404-ProgrammationOrienteeObjets\TunnelMagique\TunnelMagique\obj\Debug\TunnelMagique.TunnelMagique.resources
+C:\Users\kilgood\Desktop\TunnelMagique\TunnelMagique\bin\Debug\TunnelMagique.exe.config
+C:\Users\kilgood\Desktop\TunnelMagique\TunnelMagique\bin\Debug\TunnelMagique.exe
+C:\Users\kilgood\Desktop\TunnelMagique\TunnelMagique\bin\Debug\TunnelMagique.pdb
+C:\Users\kilgood\Desktop\TunnelMagique\TunnelMagique\obj\Debug\TunnelMagique.csprojAssemblyReference.cache
+C:\Users\kilgood\Desktop\TunnelMagique\TunnelMagique\obj\Debug\TunnelMagique.TunnelMagique.resources
+C:\Users\kilgood\Desktop\TunnelMagique\TunnelMagique\obj\Debug\TunnelMagique.Properties.Resources.resources
+C:\Users\kilgood\Desktop\TunnelMagique\TunnelMagique\obj\Debug\TunnelMagique.csproj.GenerateResource.cache
+C:\Users\kilgood\Desktop\TunnelMagique\TunnelMagique\obj\Debug\TunnelMagique.csproj.CoreCompileInputs.cache
+C:\Users\kilgood\Desktop\TunnelMagique\TunnelMagique\obj\Debug\TunnelMagique.exe
+C:\Users\kilgood\Desktop\TunnelMagique\TunnelMagique\obj\Debug\TunnelMagique.pdb

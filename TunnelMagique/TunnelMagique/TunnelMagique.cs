@@ -1,6 +1,6 @@
 ﻿///ETML
-///Auteur : Anthony Höhn
-///Date : 14.06.2021
+///Auteur : Killian Good
+///Date : 16.06.2021
 ///Description : Tunnel magique, grid made up of 25x25 labels.
 using System;
 using System.Drawing;
@@ -10,15 +10,6 @@ namespace TunnelMagique
 {
     public partial class TunnelMagique : Form
     {
-        /// <summary>
-        /// Constant : The number of labels in axe x
-        /// </summary>
-        private const int PANEL_WIDTH = 5;
-
-        /// <summary>
-        /// Constant : The number of labels axe y
-        /// </summary>
-        private const int PANEL_HEIGHT = 5;
 
         /// <summary>
         /// Constant :  The width of the labels
@@ -33,7 +24,7 @@ namespace TunnelMagique
         public int CURSOR_POSITION_X = 100;
         public int CURSOR_POSITION_Y = 100;
 
-
+        // Set inital position of the yellow point
         private Point position = new Point(100, 100);
         Control currentLabel;
 
@@ -53,6 +44,7 @@ namespace TunnelMagique
                 {
                     Label lbl = new Label();
 
+                    // Set width and height of the label
                     lbl.Width = LABEL_WIDTH_SIZE;
                     lbl.Height = LABEL_HEIGHT_SIZE;
 
@@ -62,15 +54,15 @@ namespace TunnelMagique
                     //border labels red
                     if (lbl.Location.X == 0 || lbl.Location.X == 200 || lbl.Location.Y == 0 || lbl.Location.Y == 200)
                     {
-                        lbl.BackColor = Color.Red;
                         lbl.Tag = "Red";
-
+                        lbl.BackColor = Color.Red;
                     }
 
                     //midle white line
                     if (lbl.Location.X == 100 || lbl.Location.Y == 100)
                     {
                         lbl.BackColor = Color.White;
+                        lbl.Tag = null;
 
                     }
 
@@ -100,6 +92,21 @@ namespace TunnelMagique
                 currentLabel = PnlContainer.GetChildAtPoint(position);
                 currentLabel.BackColor = Color.Yellow;
             }
+            else
+            {
+                currentLabel.BackColor = Color.White;
+                position.Y += 200;
+                currentLabel = PnlContainer.GetChildAtPoint(position);
+                currentLabel.BackColor = Color.Yellow; ;
+            }
+
+            if ((String)currentLabel.Tag == "Red")
+            {
+                currentLabel.BackColor = Color.Red;
+                position.Y += 50;
+                currentLabel = PnlContainer.GetChildAtPoint(position);
+                currentLabel.BackColor = Color.Yellow; 
+            }
         }
 
         /// <summary>
@@ -117,6 +124,21 @@ namespace TunnelMagique
                 currentLabel = PnlContainer.GetChildAtPoint(position);
                 currentLabel.BackColor = Color.Yellow;
             }
+            else
+            {
+                currentLabel.BackColor = Color.White;
+                position.X = 0;
+                currentLabel = PnlContainer.GetChildAtPoint(position);
+                currentLabel.BackColor = Color.Yellow; ;
+            }
+
+            if ((String)currentLabel.Tag == "Red")
+            {
+                currentLabel.BackColor = Color.Red;
+                position.X -= 50;
+                currentLabel = PnlContainer.GetChildAtPoint(position);
+                currentLabel.BackColor = Color.Yellow;
+            }
         }
 
         /// <summary>
@@ -131,6 +153,21 @@ namespace TunnelMagique
             {
                 currentLabel.BackColor = Color.White;
                 position.Y += 50;
+                currentLabel = PnlContainer.GetChildAtPoint(position);
+                currentLabel.BackColor = Color.Yellow;
+            }
+            else
+            {
+                currentLabel.BackColor = Color.White;
+                position.Y -= 200;
+                currentLabel = PnlContainer.GetChildAtPoint(position);
+                currentLabel.BackColor = Color.Yellow; ;
+            }
+
+            if ((String)currentLabel.Tag == "Red")
+            {
+                currentLabel.BackColor = Color.Red;
+                position.Y -= 50;
                 currentLabel = PnlContainer.GetChildAtPoint(position);
                 currentLabel.BackColor = Color.Yellow;
             }
@@ -152,6 +189,36 @@ namespace TunnelMagique
                 currentLabel = PnlContainer.GetChildAtPoint(position);
                 currentLabel.BackColor = Color.Yellow;
             }
+            else
+            {
+                currentLabel.BackColor = Color.White;
+                position.X += 200;
+                currentLabel = PnlContainer.GetChildAtPoint(position);
+                currentLabel.BackColor = Color.Yellow; ;
+            }
+
+            if ((String)currentLabel.Tag == "Red")
+            {
+                currentLabel.BackColor = Color.Red;
+                position.X += 50;
+                currentLabel = PnlContainer.GetChildAtPoint(position);
+                currentLabel.BackColor = Color.Yellow;
+            }
+        }
+
+        private void TunnelMagique_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SpawnButton_Click(object sender, EventArgs e)
+        {
+            currentLabel = PnlContainer.GetChildAtPoint(position);
+
+            currentLabel.BackColor = Color.White;
+            position.X = 100; position.Y = 100;
+            currentLabel = PnlContainer.GetChildAtPoint(position);
+            currentLabel.BackColor = Color.Yellow;
         }
     }
 }

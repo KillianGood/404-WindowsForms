@@ -33,6 +33,7 @@
             this.BtnRight = new System.Windows.Forms.Button();
             this.BtnDown = new System.Windows.Forms.Button();
             this.BtnLeft = new System.Windows.Forms.Button();
+            this.spawnButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // PnlContainer
@@ -84,11 +85,21 @@
             this.BtnLeft.UseVisualStyleBackColor = true;
             this.BtnLeft.Click += new System.EventHandler(this.BtnLeft_Click);
             // 
+            // spawnButton
+            // 
+            this.spawnButton.Location = new System.Drawing.Point(130, 359);
+            this.spawnButton.Name = "spawnButton";
+            this.spawnButton.Size = new System.Drawing.Size(50, 50);
+            this.spawnButton.TabIndex = 5;
+            this.spawnButton.UseVisualStyleBackColor = true;
+            this.spawnButton.Click += new System.EventHandler(this.SpawnButton_Click);
+            // 
             // TunnelMagique
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(311, 481);
+            this.Controls.Add(this.spawnButton);
             this.Controls.Add(this.BtnLeft);
             this.Controls.Add(this.BtnDown);
             this.Controls.Add(this.BtnRight);
@@ -100,6 +111,7 @@
             this.Name = "TunnelMagique";
             this.Text = "Tunnel Magique";
             this.TopMost = true;
+            this.Load += new System.EventHandler(this.TunnelMagique_Load);
             this.ResumeLayout(false);
 
         }
@@ -111,6 +123,7 @@
         private System.Windows.Forms.Button BtnRight;
         private System.Windows.Forms.Button BtnDown;
         private System.Windows.Forms.Button BtnLeft;
+        private System.Windows.Forms.Button spawnButton;
     }
 }
 
