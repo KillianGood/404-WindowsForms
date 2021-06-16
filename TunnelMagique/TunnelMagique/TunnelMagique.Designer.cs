@@ -44,6 +44,7 @@
             this.PnlContainer.Name = "PnlContainer";
             this.PnlContainer.Size = new System.Drawing.Size(250, 250);
             this.PnlContainer.TabIndex = 0;
+            this.PnlContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlContainer_Paint);
             // 
             // BtnUp
             // 

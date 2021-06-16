@@ -211,14 +211,26 @@ namespace TunnelMagique
 
         }
 
+        /// <summary>
+        /// Button for set the yellow curso at spawn point
+        /// </summary>
+        /// <param name="sender">object that causes the event</param>
+        /// <param name="e">event-related data</param>
         private void SpawnButton_Click(object sender, EventArgs e)
         {
+            
             currentLabel = PnlContainer.GetChildAtPoint(position);
 
             currentLabel.BackColor = Color.White;
             position.X = 100; position.Y = 100;
             currentLabel = PnlContainer.GetChildAtPoint(position);
             currentLabel.BackColor = Color.Yellow;
+        }
+
+
+        private void PnlContainer_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
