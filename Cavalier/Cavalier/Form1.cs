@@ -95,9 +95,6 @@ namespace Cavalier
                 btn.BackColor = Color.Red;
                 lblTry.Text = Convert.ToString(g_intCompteur++);
             }
-                button1.Location.X = 50;
-                currentButton = pnlMap.GetChildAtPoint(position);
-                currentButton.BackColor = Color.Green;  
             
         }
 
